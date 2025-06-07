@@ -21,6 +21,7 @@
     "@distube/ytdl-core": "^4.16.11",
     "discord.js": "^14.11.0",
     "dotenv": "^16.5.0",
+    "express": "^5.1.0",
     "ffmpeg-static": "^5.1.0",
     "libsodium-wrappers": "^0.7.15",
     "node-schedule": "^2.1.1",
