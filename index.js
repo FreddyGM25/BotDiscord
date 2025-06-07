@@ -5,6 +5,8 @@ const ytdl = require('@distube/ytdl-core');
 const yts = require('yt-search');
 const fs = require('fs');
 const schedule = require('node-schedule');
+const express = require('express');
+const app = express();
 
 // Configuración del bot
 const client = new Client({
@@ -401,3 +403,6 @@ function formatDuration(seconds) {
 
 // Iniciar sesión con el token del bot desde .env
 client.login(process.env.DISCORD_TOKEN);
+
+app.get('/', (req, res) => res.send('Bot activo'));
+app.listen(3000, () => console.log('Web de keep-alive activa'));
